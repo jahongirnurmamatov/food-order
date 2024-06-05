@@ -8,7 +8,7 @@ const CategoryPage
   return (
     <div className='flex text-red-500 flex-wrap'>
       {pizzas.map(item=>(
-        <Link href={`/product/${item.id}`} key={item.id} className='w-full even:bg-fuchsia-50 group h-[60vh] border-r-2 border-b-2 border-red-500 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between'>
+        <Link href={`/products/${item.id}`} key={item.id} className='w-full even:bg-fuchsia-50 group h-[60vh] border-r-2 border-b-2 border-red-500 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between'>
           {/* image container */}
           {item.img && <div className='relative h-[80%]'>
             <Image src={item.img} alt='' fill className='object-contain'/>
